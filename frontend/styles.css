@@ -1,0 +1,152 @@
+/* Base setup */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0d47a1, #1e3c72);
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+/* Glassy Container with silver tone */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px silver;
+}
+
+.emoji {
+  font-size: 36px;
+  margin-right: 6px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #0d47a1;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+  background-color: #d3d3d3;
+  color: #001f4d;
+}
+
+/* Total display */
+#totalDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: center;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 4px #999;
+}
+
+/* Chart */
+#expenseChart {
+  margin: 30px auto;
+  max-width: 100%;
+}
+
+/* AI Insights Card */
+#aiInsights {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid silver;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+#aiInsights h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px #aaa;
+}
+
+#insightList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#insightList li {
+  padding: 6px 0;
+  font-size: 16px;
+  color: #f1f1f1;
+  text-shadow: 1px 1px 3px #444;
+}
+#aiInsights {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  border-radius: 12px;
+  color: #f0f0f0;
+  box-shadow: 0 0 15px rgba(192, 192, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+#aiInsights h2 {
+  font-size: 20px;
+  color: #f5f5f5;
+}
+
+#aiInsights ul {
+  list-style-type: "✨ ";
+  padding-left: 20px;
+}
+
+#aiInsights li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #e0e0e0;
+}

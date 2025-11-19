@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Budget Tracker 💰</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><span class="emoji">💰</span> Smart Budget Tracker</h1>
+
+    <form id="expenseForm">
+      <label for="date">📅 Date</label>
+      <input type="date" id="date" required />
+
+      <label for="category">📂 Category</label>
+      <input type="text" id="category" placeholder="E.g. Food, Travel, Rent..." required />
+
+      <label for="amount">💵 Amount (₹)</label>
+      <input type="number" id="amount" placeholder="Enter amount" required />
+
+      <label for="notes">📝 Notes (Optional)</label>
+      <input type="text" id="notes" placeholder="Details (optional)" />
+
+      <button type="submit">➕ Add Expense</button>
+    </form>
+
+    <div id="totalDisplay">Total Spent This Month: ₹0</div>
+
+    <canvas id="expenseChart"></canvas>
+
+    <!-- AI Insights Section -->
+    <div id="aiInsights">
+      <h2>💡 Smart AI Insights</h2>
+      <ul id="insightList">
+        <li>Loading insights...</li>
+      </ul>
+    </div>
+
+    <button onclick="downloadCSV()">⬇️ Download CSV</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
