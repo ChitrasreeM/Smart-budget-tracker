@@ -1,0 +1,7 @@
+﻿venv/
+__pycache__/
+*.db
+exported_expenses.csv
+.env
+.DS_Store
+gitignore.docx
